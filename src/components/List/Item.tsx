@@ -1,4 +1,4 @@
-import style from './todoItem.module.css';
+import style from './Item.module.css';
 import { useDispatch } from 'react-redux';
 import { ListItem, removeItem } from '../../store/state';
 

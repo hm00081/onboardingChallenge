@@ -1,4 +1,4 @@
-import style from './todoList.module.css';
+import style from './List.module.css';
 import Item from './Item';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/todo';
