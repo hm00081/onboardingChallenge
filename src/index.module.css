@@ -1,0 +1,36 @@
+:root {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    background: gray;
+    color-scheme: light dark;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    --light: #faf9f7;
+    --dark: #1a1a1a;
+}
+
+button {
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    user-select: none;
+}
+button:enabled {
+    cursor: pointer;
+}
+
+input {
+    font-size: 1rem;
+}
+input:focus {
+    outline: 1px solid;
+}
