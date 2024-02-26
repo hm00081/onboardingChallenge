@@ -1,4 +1,4 @@
-import style from './app.module.css';
+import style from './App.module.css';
 import FormList from './components/FormList';
 import TodoList from './components/List/List';
 
