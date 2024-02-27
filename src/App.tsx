@@ -1,13 +1,13 @@
 import style from './App.module.css';
 import FormList from './components/FormList';
-import TodoList from './components/List/List';
+import List from './components/List/List';
 
 function App() {
     return (
-        <main className={style.main}>
+        <div className={style.app}>
             <FormList />
-            <TodoList />
-        </main>
+            <List />
+        </div>
     );
 }
 

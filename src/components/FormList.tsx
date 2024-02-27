@@ -1,11 +1,11 @@
 import style from './FormList.module.css';
-import React from 'react';
+import React, { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { appendItem } from '../store/state';
 
 export default function FormList() {
     const dispatch = useDispatch();
-    const inputRef = React.createRef<HTMLInputElement>();
+    const inputRef = useRef<HTMLInputElement>(null);
 
     const appendHandler = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -20,8 +20,8 @@ export default function FormList() {
 
     return (
         <form className={style.form} onSubmit={appendHandler}>
-            <input className={style.input} ref={inputRef} placeholder="input your todoList" title="input"></input>
-            <button className={style.add} title="add">
+            <input className={style.input} ref={inputRef} placeholder="input your todoList" title="input" aria-label="todo input"></input>
+            <button className={style.add} type="submit" title="add">
                 Add
             </button>
         </form>

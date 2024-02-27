@@ -1,18 +1,14 @@
 import style from './Item.module.css';
-import { useDispatch } from 'react-redux';
-import { ListItem, removeItem } from '../../store/state';
+import { ListItem } from '../../store/state';
+import { useRemoveItem } from './UseRemoveItem';
 
 export default function Item({ id, content }: ListItem) {
-    const dispatch = useDispatch();
-
-    const deleteHandler = () => {
-        dispatch(removeItem(id));
-    };
+    const removeItem = useRemoveItem();
 
     return (
         <div className={style.item}>
             <div className={style.content}>{content}</div>
-            <button className={style.delete} type="button" title="delete" onClick={deleteHandler}>
+            <button className={style.delete} type="button" title="delete" onClick={() => removeItem(id)}>
                 delete
             </button>
         </div>

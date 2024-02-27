@@ -1,10 +1,9 @@
 import style from './List.module.css';
 import Item from './Item';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../store/todo';
+import { useTodoList } from './UseToDoList';
 
 export default function List() {
-    const list = useSelector((state: RootState) => state.todo.list);
+    const list = useTodoList();
 
     return (
         <div className={style.wrapper}>
