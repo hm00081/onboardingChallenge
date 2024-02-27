@@ -1,6 +1,6 @@
 .form {
     display: flex;
-    margin-left: 15px;
+    margin-left: 9px;
     flex-wrap: wrap;
     justify-content: space-between;
     width: calc(100% - 18px);
@@ -37,7 +37,6 @@
         flex-direction: column;
         gap: 8px;
     }
-
     .input,
     .add {
         width: 100%;
